@@ -8,7 +8,8 @@
     --light-gray: #5A5A5D;
     --orange: #FF5400;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -71,9 +72,10 @@ header {
     background-repeat: no-repeat;
     border-radius: 16px;
     text-align: center;
-    margin:50px auto;
+    margin: 50px auto;
     padding: 106px;
 }
+
 .banner-content h3 {
     color: white;
     font-size: 4rem;
@@ -93,9 +95,8 @@ header {
     background: rgba(255, 255, 255, 0.30);
     display: flex;
     gap: 24px;
-    justify-content: center;
     padding: 12px;
-    margin: 48px 80px 0 ;
+    margin: 48px 80px 0;
 }
 
 .btn-area>button {
@@ -106,6 +107,8 @@ header {
     background: #FFF;
     font-weight: 400;
     color: var(--dark-gray);
+    text-align: left;
+    padding-left: 16px;
 }
 
 #find-btn {
@@ -113,28 +116,103 @@ header {
     color: #FFF;
 }
 
+/* popular tours section */
+main {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.popular-tours {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.tour-text h3 {
+    font-size: 2.5rem;
+    color: var(--title-black);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.tour-descr {
+    color: var(--dark-gray);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#more-btn {
+    background: var(--orange);
+    color: #FFF;
+    min-width: 174px;
+    min-height: 52px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    background: var(--orange);
+    margin-top: 30px;
+}
+/* destination section */
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
-    header{
+
+    /* header section   */
+    header {
         margin: 20px 20px;
     }
-    .nav-container ul{
+
+    .nav-container ul {
         display: none;
-    } 
-    .nav-container{
+    }
+
+    .nav-container {
         flex-direction: column;
         justify-content: flex-start;
         align-items: baseline;
     }
-    .btn-area{
+
+    .btn-area {
         flex-direction: column;
     }
-    .banner-container{
+
+    .banner-container {
         padding: 20px;
         background-size: cover;
         background-position-x: center;
     }
-    .banner-descr{
+
+    .banner-descr {
         margin: auto;
+    }
+
+    /* popular tours section */
+    main {
+        margin: 0 20px;
+    }
+
+    .popular-tours {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .tour-img img {
+        width: 100%;
+    }
+
+    .tour-descr ul {
+        margin-left: 20px;
     }
 }
