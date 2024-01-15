@@ -70,7 +70,6 @@ header {
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
     border-radius: 16px;
-    background-size: 100%;
     text-align: center;
     margin:50px auto;
     padding: 106px;
@@ -86,6 +85,7 @@ header {
     color: white;
     font-weight: 400;
     line-height: 26px;
+    margin: 0 110px;
 }
 
 .btn-area {
@@ -116,7 +116,7 @@ header {
 
 @media screen and (max-width: 600px) {
     header{
-        margin: 0 20px;
+        margin: 20px 20px;
     }
     .nav-container ul{
         display: none;
@@ -124,13 +124,17 @@ header {
     .nav-container{
         flex-direction: column;
         justify-content: flex-start;
+        align-items: baseline;
     }
     .btn-area{
         flex-direction: column;
-        margin: 0;
-        padding: 0;
     }
     .banner-container{
-width: 100%;
+        padding: 20px;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .banner-descr{
+        margin: auto;
     }
 }
