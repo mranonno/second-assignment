@@ -2,10 +2,135 @@
 
 /* font-family: 'Mulish', sans-serif; */
 
-:root{
-    --primary-font: 'Mulish', sans-serif;
+:root {
     --title-black: #131318;
     --dark-gray: rgba(19, 19, 24, 0.70);
     --light-gray: #5A5A5D;
     --orange: #FF5400;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/* Responsive for laptop/desktop */
+/* @media screen and (min-width: 992px) { */
+
+/* header section style  */
+header {
+    max-width: 1170px;
+    margin: 50px auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-container h3 {
+    color: var(--title-black);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+#earth,
+#home {
+    color: var(--orange);
+}
+
+.nav-container ul {
+    display: flex;
+    gap: 44px;
+}
+
+.nav-container ul li {
+    list-style: none;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-weight: 400;
+}
+
+/* Banner section style */
+.banner-container {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-size: 100%;
+    text-align: center;
+    margin:50px auto;
+    padding: 106px;
+}
+.banner-content h3 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.banner-descr {
+    color: white;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.btn-area {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 12px;
+    margin: 48px 80px 0 ;
+}
+
+.btn-area>button {
+    min-width: 174px;
+    min-height: 52px;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+#find-btn {
+    background: var(--orange);
+    color: #FFF;
+}
+
+
+@media screen and (max-width: 600px) {
+    header{
+        margin: 0 20px;
+    }
+    .nav-container ul{
+        display: none;
+    } 
+    .nav-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .btn-area{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .banner-container{
+width: 100%;
+    }
 }
