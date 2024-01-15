@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Mulish', sans-serif; */
+
+:root{
+    --primary-font: 'Mulish', sans-serif;
+    --title-black: #131318;
+    --dark-gray: rgba(19, 19, 24, 0.70);
+    --light-gray: #5A5A5D;
+    --orange: #FF5400;
+}
