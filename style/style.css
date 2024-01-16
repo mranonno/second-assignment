@@ -142,14 +142,13 @@ main {
     line-height: 26px;
 }
 
-#more-btn {
+.primary-btn {
     background: var(--orange);
     color: #FFF;
-    min-width: 174px;
-    min-height: 52px;
+    padding: 14px 35px;
     border: none;
     border-radius: 8px;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.25rem;
     background: var(--orange);
     margin-top: 30px;
@@ -339,11 +338,85 @@ main {
     padding: 32px 55px 32px 32px;
 }
 
+/* newsletter section */
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 100px 0;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.news-form h3 {
+    font-size: 1.5rem;
+    color: var(--title-black);
+    font-weight: 800;
+}
+
+.news-form p {
+    color: var(--light-gray);
+    font-weight: 400;
+    line-height: 26px;
+    margin: 16px 0 24px 0;
+}
+
+.input-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.input-btn input {
+    color: rgba(19, 19, 24, 0.30);
+    font-weight: 400;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+    min-width: 393px;
+}
+.submit{
+    margin: 0;
+}
+
+.news-img {
+    position: relative;
+}
+
+.offer-box {
+    position: absolute;
+    color: white;
+    border-radius: 16px;
+    background: #FF5400;
+    padding: 30px;
+    transform: rotate(-19.628deg);
+    text-align: center;
+    right: 7px;
+    bottom: 52px;
+}
+.offer-box p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.offer-box h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
 
 /* footer section */
 .footer-container {
     max-width: 1440px;
-    margin: 110px auto 0;
+    margin: 0 auto;
     text-align: center;
     padding: 130px;
     background: rgba(19, 19, 24, 0.05);
@@ -379,7 +452,7 @@ main {
     max-width: 24px;
 }
 
-hr {
+.footer-container hr {
     background: rgba(19, 19, 24, 0.10);
     height: 1px;
     border: none;
@@ -399,6 +472,13 @@ hr {
 
 @media screen and (max-width: 600px) {
 
+    .btn-area,
+    .row-1,
+    .row-2,
+    .row-3, .newsletter {
+        flex-direction: column;
+    }
+
     /* header section   */
     header {
         margin: 20px 20px;
@@ -414,12 +494,6 @@ hr {
         align-items: baseline;
     }
 
-    .btn-area,
-    .row-1,
-    .row-2,
-    .row-3 {
-        flex-direction: column;
-    }
 
     .banner-container {
         padding: 20px;
@@ -472,20 +546,35 @@ hr {
         padding: 20px 0 20px 20px;
     }
 
+/* newsletter section  */
+.input-btn input{
+    min-width: 0;
+}
+.offer-box {
+    padding: 15px;
+    right: 3px;
+    bottom: 44px;
+}
+.news-img img{
+max-width: 100%;
 
+}
     /* footer section */
 
-    .footer-container{
+    .footer-container {
         width: 100%;
         padding: 33px 20px;
     }
-    .footer-container p{
+
+    .footer-container p {
         margin: 16px 0;
     }
-    .footer-img{
+
+    .footer-img {
         margin-bottom: 24px;
     }
-    .copyright{
+
+    .copyright {
         margin-top: 24px;
     }
 }
