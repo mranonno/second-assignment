@@ -154,9 +154,114 @@ main {
     background: var(--orange);
     margin-top: 30px;
 }
+
 /* destination section */
+.destination {
+    text-align: center;
+    margin-top: 50px;
+}
 
+.title-descr h3 {
+    font-size: 2.5rem;
+    color: var(--title-black);
+    font-weight: 800;
+}
 
+.title-descr p {
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin: 24px 264px;
+}
+.flex-container{
+    margin-top: 48px;
+}
+.box{
+    padding: 132px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    background-position: center;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.75rem;
+    gap: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.mal {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 5.png);
+    width: calc((100% - 20px)/2);
+    background-size: cover;
+}
+
+.ind {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 8.png);
+    width: calc((100% - 20px)/2);
+    background-size: cover;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    gap: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.sri {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 6.png);
+    width: calc((100% - 40px)/3);
+    background-size: cover;
+}
+
+.na {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 7.png);
+    width: calc((100% - 40px)/2);
+    background-size: cover;
+}
+
+.kas {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 5.png);
+    width: calc((100% - 40px)/4);
+    background-size: cover;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.75rem;
+    gap: 20px;
+    font-weight: 800;
+    max-width: 100%;
+}
+
+.bd {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 11.png);
+    width: calc((100% - 20px)/2.5);
+    background-size: cover;
+}
+
+.ban {
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(../Images/Rectangle\ 10.png);
+    width: calc((100% - 20px)/1.6);
+    background-size: cover;
+}
+
+.choose-us {
+    margin-top: 100px;
+}
 
 
 
@@ -184,7 +289,7 @@ main {
         align-items: baseline;
     }
 
-    .btn-area {
+    .btn-area, .row-1, .row-2, .row-3 {
         flex-direction: column;
     }
 
@@ -214,5 +319,11 @@ main {
 
     .tour-descr ul {
         margin-left: 20px;
+    }
+    .title-descr p{
+        margin: 24px 0;
+    }
+    .box{
+        width: 100%;
     }
 }
