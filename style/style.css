@@ -112,8 +112,23 @@ header {
 }
 
 #find-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background: var(--orange);
     color: #FFF;
+}
+
+#select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#when {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* popular tours section */
@@ -425,6 +440,14 @@ main {
     text-align: start;
 }
 
+#day,
+#mal,
+#max {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* perfect place section   */
 
 
@@ -604,8 +627,22 @@ main {
     margin-top: 50px;
 }
 
+@media screen and (min-width: 992px) {
+    header {
+        max-width: 1170px;
+        margin: 50px auto;
+    }
 
+    main {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 
+    .footer-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
 
 
 
@@ -692,6 +729,12 @@ main {
     /* deals & discount section */
     .deals-title p {
         margin: 0;
+    }
+
+    .Night ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .deals-img-box1 {
