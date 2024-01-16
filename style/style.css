@@ -172,16 +172,19 @@ main {
     color: var(--dark-gray);
     margin: 24px 264px;
 }
-.flex-container{
+
+.flex-container {
     margin-top: 48px;
 }
-.box{
+
+.box {
     padding: 132px 0;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
     background-position: center;
 }
+
 .row-1 {
     display: flex;
     justify-content: space-between;
@@ -259,8 +262,80 @@ main {
     background-size: cover;
 }
 
+/* choose us section style */
 .choose-us {
     margin-top: 100px;
+    text-align: center;
+}
+
+.choose-title h3 {
+    font-size: 2.5rem;
+    color: var(--title-black);
+    font-weight: 800;
+}
+
+.choose-title p {
+    color: var(--dark-gray);
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px 240px;
+}
+
+.choose-box1 h3,
+.choose-box2 h3,
+.choose-box3 h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--title-black);
+    margin-bottom: 24px;
+}
+
+.choose-box1 p,
+.choose-box2 p,
+.choose-box3 p {
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--light-gray);
+    margin-bottom: 24px;
+}
+
+.box-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+text-align: start;
+gap: 20px;
+margin-top: 48px;
+}
+.box-container img{
+    margin-bottom: 24px;
+}
+
+.choose-box1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 573px;
+    height: 284px;
+    padding: 32px 55px 32px 32px;
+}
+
+.choose-box2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 573px;
+    height: 284px;
+    padding: 32px 55px 32px 32px;
+}
+
+.choose-box3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 573px;
+    height: 284px;
+    padding: 32px 55px 32px 32px;
 }
 
 
@@ -289,7 +364,10 @@ main {
         align-items: baseline;
     }
 
-    .btn-area, .row-1, .row-2, .row-3 {
+    .btn-area,
+    .row-1,
+    .row-2,
+    .row-3 {
         flex-direction: column;
     }
 
@@ -301,6 +379,9 @@ main {
 
     .banner-descr {
         margin: auto;
+    }
+    .btn-area{
+        margin: 0 auto;
     }
 
     /* popular tours section */
@@ -320,10 +401,19 @@ main {
     .tour-descr ul {
         margin-left: 20px;
     }
-    .title-descr p{
+
+    .title-descr p {
         margin: 24px 0;
     }
-    .box{
+
+    .box {
         width: 100%;
+    }
+    .choose-title p{
+        margin: 24px 0;
+    }
+    .choose-box1, .choose-box2, .choose-box3{
+width: 100%;
+padding: 20px 0 20px 20px;
     }
 }
